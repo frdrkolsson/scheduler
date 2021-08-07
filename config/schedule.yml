@@ -1,0 +1,4 @@
+site_refresher:
+  cron: '*/20 * * * *'
+  class: 'SiteRefresherWorker'
+  queue: default

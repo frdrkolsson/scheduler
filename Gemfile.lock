@@ -1,0 +1,41 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.1.9)
+    connection_pool (2.2.5)
+    et-orbi (1.2.4)
+      tzinfo
+    fugit (1.5.0)
+      et-orbi (~> 1.1, >= 1.1.8)
+      raabro (~> 1.4)
+    raabro (1.4.0)
+    rack (2.2.3)
+    redis (4.4.0)
+    sidekiq (6.2.1)
+      connection_pool (>= 2.2.2)
+      rack (~> 2.0)
+      redis (>= 4.2.0)
+    sidekiq-cron (1.2.0)
+      fugit (~> 1.1)
+      sidekiq (>= 4.2.1)
+    tzinfo (2.0.4)
+      concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2021.1)
+      tzinfo (>= 1.0.0)
+
+PLATFORMS
+  x86_64-darwin-19
+  x86_64-darwin-20
+  x86_64-darwin-21
+  x86_64-linux-musl
+
+DEPENDENCIES
+  sidekiq
+  sidekiq-cron (~> 1.1)
+  tzinfo-data
+
+RUBY VERSION
+   ruby 3.0.2p107
+
+BUNDLED WITH
+   2.2.22
